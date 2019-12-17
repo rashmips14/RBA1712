@@ -2,31 +2,58 @@
 <testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="25260" started-at="2019-11-29T11:22:19Z" finished-at="2019-11-29T11:22:44Z">
+  <suite name="Default suite" duration-ms="85401" started-at="2019-12-17T10:24:14Z" finished-at="2019-12-17T10:25:40Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="25260" started-at="2019-11-29T11:22:19Z" finished-at="2019-11-29T11:22:44Z">
-      <class name="com.training.sanity.tests.TC_01_CBIADDGBSTests">
-        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.sanity.tests.TC_01_CBIADDGBSTests@ea4a92b]" name="setUpBeforeClass" is-config="true" duration-ms="10" started-at="2019-11-29T16:52:19Z" finished-at="2019-11-29T16:52:19Z">
+    <test name="Default test" duration-ms="85401" started-at="2019-12-17T10:24:14Z" finished-at="2019-12-17T10:25:40Z">
+      <class name="com.training.sanity.tests.RecurrTests">
+        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.sanity.tests.RecurrTests@1d057a39]" name="setUpBeforeClass" is-config="true" duration-ms="27" started-at="2019-12-17T15:54:14Z" finished-at="2019-12-17T15:54:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpBeforeClass -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.TC_01_CBIADDGBSTests@ea4a92b]" name="setUp" is-config="true" duration-ms="19718" started-at="2019-11-29T16:52:19Z" finished-at="2019-11-29T16:52:38Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.RecurrTests@1d057a39]" name="setUp" is-config="true" duration-ms="21279" started-at="2019-12-17T15:54:14Z" finished-at="2019-12-17T15:54:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="validloginTest()[pri:0, instance:com.training.sanity.tests.TC_01_CBIADDGBSTests@ea4a92b]" name="validloginTest" duration-ms="3931" started-at="2019-11-29T16:52:38Z" finished-at="2019-11-29T16:52:42Z">
-          <exception class="java.lang.NullPointerException">
+        <test-method status="FAIL" signature="validLoginTest()[pri:0, instance:com.training.sanity.tests.RecurrTests@1d057a39]" name="validLoginTest" duration-ms="61999" started-at="2019-12-17T15:54:36Z" finished-at="2019-12-17T15:55:38Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":".ui\-datepicker\-month"}
+  (Session info: chrome=78.0.3904.108)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+System info: host: 'DESKTOP-EGTF2AJ', ip: '9.109.154.95', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=78.0.3904.70 (edb9c9f3de0247fd912a77b7f6cae7447f6d3ad5-refs/branch-heads/3904@{#800}), userDataDir=C:\Users\RASHMI~1\AppData\Local\Temp\scoped_dir12800_618443852}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=XP, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:55197}, acceptInsecureCerts=false, browserVersion=78.0.3904.108, browserName=chrome, javascriptEnabled=true, platformName=XP, setWindowRect=true}]
+Session ID: b1a6b550be2f88e5166513f7eb442f74
+*** Element info: {Using=class name, value=ui-datepicker-month}]]>
+            </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy9.click(Unknown Source)
-	at com.training.pom.TC_01_CBIADDGBSPOM.clickAcceptBtn(TC_01_CBIADDGBSPOM.java:79)
-	at com.training.sanity.tests.TC_01_CBIADDGBSTests.validloginTest(TC_01_CBIADDGBSTests.java:53)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":".ui\-datepicker\-month"}
+  (Session info: chrome=78.0.3904.108)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+System info: host: 'DESKTOP-EGTF2AJ', ip: '9.109.154.95', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=78.0.3904.70 (edb9c9f3de0247fd912a77b7f6cae7447f6d3ad5-refs/branch-heads/3904@{#800}), userDataDir=C:\Users\RASHMI~1\AppData\Local\Temp\scoped_dir12800_618443852}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=XP, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:55197}, acceptInsecureCerts=false, browserVersion=78.0.3904.108, browserName=chrome, javascriptEnabled=true, platformName=XP, setWindowRect=true}]
+Session ID: b1a6b550be2f88e5166513f7eb442f74
+*** Element info: {Using=class name, value=ui-datepicker-month}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByClassName(RemoteWebDriver.java:442)
+	at org.openqa.selenium.By$ByClassName.findElement(By.java:391)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
+	at com.training.pom.Recurringpom.AddRecurring(Recurringpom.java:131)
+	at com.training.sanity.tests.RecurrTests.validLoginTest(RecurrTests.java:61)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -48,20 +75,20 @@
 	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
 	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validloginTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.TC_01_CBIADDGBSTests@ea4a92b]" name="tearDown" is-config="true" duration-ms="1583" started-at="2019-11-29T16:52:42Z" finished-at="2019-11-29T16:52:44Z">
+        </test-method> <!-- validLoginTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.RecurrTests@1d057a39]" name="tearDown" is-config="true" duration-ms="2066" started-at="2019-12-17T15:55:38Z" finished-at="2019-12-17T15:55:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.training.sanity.tests.TC_01_CBIADDGBSTests -->
+      </class> <!-- com.training.sanity.tests.RecurrTests -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

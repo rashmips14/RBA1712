@@ -11,9 +11,9 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import com.training.generics.ScreenShot;
+import com.training.pom.TC_01_CBIADDGBSPOM;
 import com.training.utility.DriverFactory;
 import com.training.utility.DriverNames;
-import com.training.pom.TC_01_CBIADDGBSPOM;
 
 public class TC_01_CBIADDGBSTests {
 	private WebDriver driver;
